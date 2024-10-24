@@ -1,0 +1,72 @@
+div{
+    text-align: center;
+    min-height: 100px;
+}
+
+.secondRow{
+    margin-top: 60px;
+}
+
+@media (min-width: 1200px) {
+    .topLeft, .bottomRight{
+        background: rgb(255, 197, 51);
+    }
+    .topRight{
+        color: red;
+        font-weight: bold;
+    }
+
+    .bottomLeft{
+        color: blue;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .topRight, .content, .bottomLeft{
+        background: pink;
+    }
+
+    .topRight{
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .middleLeft, .middleRight{
+        background-color: violet;
+    }
+    
+    .topRight, .content{
+        font-size: x-large;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 767px){
+    *{
+        font-size: xx-large;
+        color: green;
+    }
+}
+
+.first, .second, .third{
+    display: flex;
+    flex-flow: column wrap;
+    font-size: xx-large;
+    color: white;
+    height: 50vh;
+    justify-content: center;
+}
+
+.first{
+    background-color: lightblue;
+}
+
+.second{
+    background-color: orange;
+}
+
+.third{
+    background-color: red;
+}
